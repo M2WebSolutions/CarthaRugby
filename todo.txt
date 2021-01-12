@@ -1,0 +1,10 @@
+About Page
+Team
+Coaches
+Fixtures
+Upload Videos & Photos (Gallery Page)
+Protected Page that only Coaches have access too - track team attendance & team personal details
+chat option / posts
+blog maybe? players to chat
+U16 & U18
+Blank text boxes/dummy text
