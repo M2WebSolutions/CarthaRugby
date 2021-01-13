@@ -1,9 +1,13 @@
-/* BASIC RESET */
+/* ===== FONT IMPORTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700&display=swap");
 
+/* ===== SET VARIABLES ==== */
 :root {
   --header-height: 7rem;
 }
 
+/* BASIC RESET */
 * {
   box-sizing: border-box;
 }
@@ -14,11 +18,36 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/* Custom Scrollbar */
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: #333;
+}
+
 /* NAV*/
 .above_header {
-  height: 40px;
+  height: 20px;
   display: flex;
   align-items: center;
+  background-color: #000;
+  color: #333;
+}
+
+.above_header p {
+  padding-left: 1rem;
+  padding-top: 1rem;
 }
 /* 
 header {
@@ -27,6 +56,10 @@ header {
 } */
 
 .navbar {
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .75px;
+  font-size: 1.1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,10 +72,16 @@ header {
 .title {
   font-size: 1.5rem;
   margin: 0.5rem;
+  padding-left: 2rem;
 }
+
 .title a {
   text-decoration: none;
   color: white;
+}
+
+.navbar-links {
+  padding-right: 2rem;
 }
 
 .navbar-links ul {
@@ -58,12 +97,49 @@ header {
 .navbar-links li a {
   text-decoration: none;
   color: white;
-  padding: 1rem;
+  padding: 1rem 2rem;
   display: block;
 }
 
-.navbar-links li:hover {
-  background-color: #555;
+.hover, .active {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.hover:before, .hover:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  width: 0px;
+  height: 3px;
+  margin: 5px 0 0;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.3s;
+  opacity: 0;
+  background-color: #e69500;
+  left: 0;
+}
+
+.active:before, .active:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  width: 100%;
+  height: 3px;
+  margin: 5px 0 0;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.3s;
+  opacity: 1;
+  background-color: #e69500;
+  left: 0;
+}
+
+.navbar-links .nav__link:hover .hover:before, .navbar-links .nav__link:hover .hover:after {
+  width: 100%;
+  opacity: 1;
 }
 
 .toggle-button {
@@ -123,6 +199,11 @@ header {
   }
 }
 
+
+
+/* ==== INDEX PAGE ===== */
+
+/* Hero */
 .hero {
   height: 50vh;
 }
@@ -255,6 +336,8 @@ header {
   fill: rgba(255, 255, 255, 0.5);
 }
 
+/* 3 Image Links */
+
 .picture__links {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -273,3 +356,11 @@ header {
     grid-template-areas: ".";
   }
 }
+
+
+
+/* Upcoming Fixtures */
+
+
+
+/* ===== MEDIA QUERIES ===== */
