@@ -1,5 +1,9 @@
 /* BASIC RESET */
 
+:root {
+  --header-height: 7rem;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -18,7 +22,7 @@ body {
 }
 
 header {
-  height: 535px;
+  height: var(--header-height);
   background-color: white;
 }
 
@@ -118,4 +122,17 @@ header {
   .navbar-links.active {
     display: flex;
   }
+}
+
+.picture__links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: ". . .";
+}
+
+.picture__links img {
+  max-width: 100%;
+  max-height: 100%;
 }
