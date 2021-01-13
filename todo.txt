@@ -1,6 +1,9 @@
++++++++ TASKS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
 About Page
-Team
-Coaches
+Team 
+Coaches 
 Fixtures
 Upload Videos & Photos (Gallery Page)
 Protected Page that only Coaches have access too - track team attendance & team personal details
@@ -8,3 +11,33 @@ chat option / posts
 blog maybe? players to chat
 U16 & U18
 Blank text boxes/dummy text
+
+++++++++  NOTES  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Need to consider the fact the WP only supports 2 pages. The index page and "other pages"
+    We need to template each page so they look the same other than the index page.
+    Output may be possible by making our HTML CSS into components? Need to research this
+    ****THIS MAY HAVE CHANGED RECENTLY, I HAVE SEEN THINGS ABOUT NEW WORDPRESS FEATURES****
+
+
+All pages must have dynamic functionality
+    IE players come and go, swap positions etc
+
+    Fixtures differ week to week - have a dynamic h1 that displays the next match with a table below of past 
+    matches with score and another table with upcoming games
+
+    Chat options seem mundane, perhaps a link to a discord or something. Less work, easier to use for everyone
+
+
+
+Fill in with dummy text / images to get the layout, then in wordpress 
+    we can implement input and looping functionality for the main stuff
+    IE - forEach({{ description }})
+
+
+
+Try to lean on JS so we don't need too much php, the only php we should need is input
+    / output functionality in terms of the WP "backend"
+
+Blog is easily implemented
+
+
