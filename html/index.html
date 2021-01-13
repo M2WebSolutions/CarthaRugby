@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/izmir.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.min.css"
+    />
+    <link rel="stylesheet" href="/css/izmir.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
 
     <title>Cartha Cobras | Home</title>
@@ -45,39 +49,93 @@
     </header>
 
     <section class="hero">
-      <h1>CARTHA COBRAS RUGBY</h1>
+      <div id="my-keen-slider" class="keen-slider">
+        <div class="keen-slider__slide number-slide1">1</div>
+        <div class="keen-slider__slide number-slide2">2</div>
+        <div class="keen-slider__slide number-slide3">3</div>
+        <div class="keen-slider__slide number-slide4">4</div>
+        <div class="keen-slider__slide number-slide5">5</div>
+        <div class="keen-slider__slide number-slide6">6</div>
+
+        <svg
+          id="arrow-left"
+          class="arrow arrow--left"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"
+          ></path>
+        </svg>
+        <svg
+          id="arrow-right"
+          class="arrow arrow--right"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"></path>
+        </svg>
+        <div id="dots" class="dots"></div>
+      </div>
     </section>
 
     <section class="picture__links">
-      <figure class="c4-izmir c4-border-top-left c4-image-zoom-in c4-gradient-left" tabindex="0" style="--primary-color: #ee8b21; --secondary-color: #f5a819; --image-opacity: .1;">
-        <img src="https://d3gbf3ykm8gp5c.cloudfront.net/content/uploads/2020/04/14163035/Scotland-players-Six-Nations-2020-PA.jpg" alt="Sample Image">
+      <figure
+        class="c4-izmir c4-border-top-left c4-image-zoom-in c4-gradient-left"
+        tabindex="0"
+        style="
+          --primary-color: #ee8b21;
+          --secondary-color: #f5a819;
+          --image-opacity: 0.1;
+        "
+      >
+        <img
+          src="https://d3gbf3ykm8gp5c.cloudfront.net/content/uploads/2020/04/14163035/Scotland-players-Six-Nations-2020-PA.jpg"
+          alt="Sample Image"
+        />
         <figcaption class="c4-layout-center">
           <div class="c4-reveal-right c4-delay-100">
-            <h3>
-              Cartha Cobras 01
-            </h3>
+            <h3>Cartha Cobras 01</h3>
           </div>
-      </figcaption>
+        </figcaption>
       </figure>
-      <figure class="c4-izmir c4-border-top-left c4-image-zoom-in c4-gradient-left" tabindex="0" style="--primary-color: #ee8b21; --secondary-color: #f5a819; --image-opacity: .1;">
-        <img src="https://d3gbf3ykm8gp5c.cloudfront.net/content/uploads/2020/04/14163035/Scotland-players-Six-Nations-2020-PA.jpg" alt="Sample Image">
+      <figure
+        class="c4-izmir c4-border-top-left c4-image-zoom-in c4-gradient-left"
+        tabindex="0"
+        style="
+          --primary-color: #ee8b21;
+          --secondary-color: #f5a819;
+          --image-opacity: 0.1;
+        "
+      >
+        <img
+          src="https://d3gbf3ykm8gp5c.cloudfront.net/content/uploads/2020/04/14163035/Scotland-players-Six-Nations-2020-PA.jpg"
+          alt="Sample Image"
+        />
         <figcaption class="c4-layout-center">
           <div class="c4-reveal-right c4-delay-100">
-            <h3>
-              Cartha Cobras 02
-            </h3>
+            <h3>Cartha Cobras 02</h3>
           </div>
-      </figcaption>
+        </figcaption>
       </figure>
-      <figure class="c4-izmir c4-border-top-left c4-image-zoom-in c4-gradient-left" tabindex="0" style="--primary-color: #ee8b21; --secondary-color: #f5a819; --image-opacity: .1;">
-        <img src="https://d3gbf3ykm8gp5c.cloudfront.net/content/uploads/2020/04/14163035/Scotland-players-Six-Nations-2020-PA.jpg" alt="Sample Image">
+      <figure
+        class="c4-izmir c4-border-top-left c4-image-zoom-in c4-gradient-left"
+        tabindex="0"
+        style="
+          --primary-color: #ee8b21;
+          --secondary-color: #f5a819;
+          --image-opacity: 0.1;
+        "
+      >
+        <img
+          src="https://d3gbf3ykm8gp5c.cloudfront.net/content/uploads/2020/04/14163035/Scotland-players-Six-Nations-2020-PA.jpg"
+          alt="Sample Image"
+        />
         <figcaption class="c4-layout-center">
           <div class="c4-reveal-right c4-delay-100">
-            <h3>
-              Cartha Cobras 03
-            </h3>
+            <h3>Cartha Cobras 03</h3>
           </div>
-      </figcaption>
+        </figcaption>
       </figure>
     </section>
 
@@ -86,5 +144,7 @@
     </section>
 
     <script src="/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.js"></script>
+    <script src="/js//keenConfig.js"></script>
   </body>
 </html>
