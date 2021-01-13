@@ -122,9 +122,11 @@ header {
     display: flex;
   }
 }
+
 .hero {
   height: 50vh;
 }
+
 #my-keen-slider {
   height: 50vh;
 }
@@ -256,7 +258,6 @@ header {
 .picture__links {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas: ". . .";
 }
@@ -264,4 +265,11 @@ header {
 .picture__links img {
   max-width: 100%;
   max-height: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+  .picture__links {
+    grid-template-columns: 1fr;
+    grid-template-areas: ".";
+  }
 }
