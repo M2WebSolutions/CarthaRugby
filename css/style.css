@@ -64,6 +64,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navbar {
+  margin-top: 40px;
   position: fixed;
   font-family: "Oswald", sans-serif;
   font-weight: 600;
@@ -387,7 +388,7 @@ body::-webkit-scrollbar-thumb {
 .overlay__text {
   z-index: 10;
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 7rem;
 }
 
 .overlay__text p {
@@ -416,7 +417,7 @@ body::-webkit-scrollbar-thumb {
 .fixtures__grid {
   padding-left: 5rem;
   padding-right: 5rem;
-  margin-top: -12rem;
+  margin-top: -15rem;
   padding-bottom: 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
