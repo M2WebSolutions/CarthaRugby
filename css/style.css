@@ -40,8 +40,8 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: #e69500;
-  color: #333;
+  background-color: black;
+  color: #fff;
 }
 
 .upper_links {
@@ -50,13 +50,13 @@ body::-webkit-scrollbar-thumb {
   width: 40px;
   text-align: center;
   line-height: 40px;
-  color: black;
+  color: white;
   transition: all 0.5s ease;
   margin: 0 0.5rem;
 }
 
 .upper_links:hover {
-  color: white;
+  color: #e69500;
   transition: all 0.5s ease;
 }
 /* 
@@ -373,6 +373,7 @@ header {
 /* Upcoming Fixtures */
 .upcoming__fixtures {
   position: relative;
+  min-height: calc(25vh + 15vh);
 }
 
 .bg__text,
@@ -409,14 +410,14 @@ header {
   margin: auto;
   font-family: "Oswald", sans-serif;
   padding-bottom: 1rem;
-  margin-top: -6rem;
+  margin-top: -5rem;
   color: rgba(241, 241, 241, 0.65);
 }
 
 .fixtures__grid {
   padding-left: 5rem;
   padding-right: 5rem;
-  padding-top: 12rem;
+  padding-top: 3rem;
   padding-bottom: 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -468,7 +469,7 @@ header {
 @media screen and (max-width: 850px) {
   .bg__text h1 {
     /* font-size: calc(10vw + 10vh + 5vmin); */
-    margin-top: -1rem;
+    margin-top: 0rem;
   }
   .fixtures__grid .fixture {
     margin: auto;
@@ -477,7 +478,7 @@ header {
 
   .fixtures__grid {
     margin: auto;
-    padding: 15rem 0;
+    padding: 5rem 0;
   }
 }
 
