@@ -15,5 +15,7 @@ function scrollFunction() {
     navBar.style.marginTop = "0px";
   } else {
     navBar.style.marginTop = "40px";
+    navBar.style.transition = "all 0.3s ease-in-out";
+
   }
 }
