@@ -373,7 +373,7 @@ header {
 /* Upcoming Fixtures */
 .upcoming__fixtures {
   position: relative;
-  min-height: calc(25vh + 15vh);
+  min-height: calc(25vh + 30vh);
 }
 
 .bg__text,
@@ -388,19 +388,19 @@ header {
 .overlay__text {
   z-index: 10;
   text-align: center;
-  padding-top: 4rem;
+  padding-top: 5rem;
 }
 
 .overlay__text p {
   text-transform: uppercase;
   color: rgb(150, 150, 150);
-  font-size: 0.8rem;
+  font-size: calc(5vw);
   letter-spacing: 0.25rem;
   right: 0.25rem;
 }
 
 .overlay__text h2 {
-  font-size: 2.5rem;
+  font-size: calc(2.5vw);
   margin-top: -1rem;
 }
 
@@ -417,7 +417,7 @@ header {
 .fixtures__grid {
   padding-left: 5rem;
   padding-right: 5rem;
-  padding-top: 3rem;
+  padding-top: 0rem;
   padding-bottom: 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -461,9 +461,20 @@ header {
     grid-template-areas: ".";
   }
 
+  .upcoming__fixtures {
+    position: relative;
+    min-height: calc(25vh + 5vh);
+  }
+
   /* .bg__text h1 {
     font-size: calc(10vw + 10vh + 15vmin);
   } */
+
+  .overlay__text {
+    z-index: 10;
+    text-align: center;
+    padding-top: 5rem;
+  }
 }
 
 @media screen and (max-width: 850px) {
