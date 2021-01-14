@@ -5,3 +5,6 @@ toggleButton.addEventListener("click", () => {
     navbarLinks.classList.toggle('active')
 });
 
+const navBar = document.getElementsByClassName("navbar")[0];
+
+navbarLinks.style.background = "White"
