@@ -40,7 +40,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: gold;
+  background-color: #e69500;
   color: #333;
 }
 
@@ -534,7 +534,7 @@ ul {
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: gold;
+  background-color: #e69500;
   height: 2px;
   box-sizing: border-box;
   width: 10%;
