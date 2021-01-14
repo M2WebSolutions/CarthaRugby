@@ -36,12 +36,15 @@ body::-webkit-scrollbar-thumb {
 
 /* NAV*/
 .above_header {
+  position: absolute;
   height: 40px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   background-color: black;
   color: #fff;
+  z-index: 99999999;
 }
 
 .upper_links {
@@ -59,13 +62,9 @@ body::-webkit-scrollbar-thumb {
   color: #e69500;
   transition: all 0.5s ease;
 }
-/* 
-header {
-  height: var(--header-height);
-  background-color: white;
-} */
 
 .navbar {
+  position: fixed;
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
@@ -75,7 +74,7 @@ header {
   align-items: center;
   background-color: black;
   color: white;
-  z-index: 1;
+  z-index: 99999;
   height: 70px;
   width: 100%;
 }
@@ -394,7 +393,7 @@ header {
 .overlay__text p {
   text-transform: uppercase;
   color: rgb(150, 150, 150);
-  font-size: calc(5vw);
+  font-size: calc(1vw);
   letter-spacing: 0.25rem;
   right: 0.25rem;
 }
@@ -417,7 +416,7 @@ header {
 .fixtures__grid {
   padding-left: 5rem;
   padding-right: 5rem;
-  padding-top: 0rem;
+  margin-top: -12rem;
   padding-bottom: 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -459,6 +458,7 @@ header {
   .fixtures__grid {
     grid-template-columns: 1fr;
     grid-template-areas: ".";
+    margin-top: -5rem;
   }
 
   .upcoming__fixtures {
