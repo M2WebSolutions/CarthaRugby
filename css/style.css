@@ -218,12 +218,14 @@ body::-webkit-scrollbar-thumb {
 
 /* Hero */
 .hero {
-  height: 50vh;
+  padding-top: 40px;
+  height: 75vh;
 }
 
 #my-keen-slider {
-  height: 50vh;
+  height: 75vh;
 }
+
 [class^="number-slide"],
 [class*=" number-slide"] {
   background: white;
@@ -302,17 +304,16 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding-bottom: 2rem;
+  padding-bottom: 3.5rem;
 }
 
 .dot {
   border: none;
-  width: 10px;
-  height: 10px;
-  background: #c5c5c5;
-  border-radius: 50%;
+  width: 25px;
+  height: 4px;
+  border: 1px solid black;
+  background: #fff;
   margin: 0 5px;
-  padding: 5px;
   cursor: pointer;
 }
 
@@ -322,6 +323,7 @@ body::-webkit-scrollbar-thumb {
 
 .dot--active {
   background: #000;
+  border: none;
 }
 
 .arrow {
