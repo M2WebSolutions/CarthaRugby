@@ -787,7 +787,11 @@ ul {
   filter: grayscale(100);
 }
 
-.player_card:hover .player_info {
+.player_card p {
+  font-weight: 200;
+}
+
+.player_card:hover h3 {
   transition: 0.2s ease-in-out;
   color: #e69500;
 }
