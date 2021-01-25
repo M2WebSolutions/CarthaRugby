@@ -164,7 +164,7 @@ body::-webkit-scrollbar-thumb {
 
 .toggle-button {
   position: absolute;
-  top: 4rem;
+  top: 2rem;
   right: 1rem;
   display: none;
   flex-direction: column;
@@ -616,4 +616,123 @@ ul {
 
 .footer-col p {
   color: #fff;
+}
+
+#fixtures_hero {
+  background: red;
+  height: 50vh;
+}
+
+#fixtures_hero img {
+  width: 100%;
+  height: 100%;
+}
+
+#fixture_div__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.fixture_div {
+  display: flex;
+  flex-direction: row;
+  background: white;
+  width: 70%;
+  margin: 0rem;
+  justify-content: space-around;
+  border: 1px solid #8a8a8a;
+  transition: 0.1s ease;
+}
+
+.fixture_div:nth-of-type(even) {
+  background: #e8e8e9;
+}
+
+.fixture_div:hover {
+  border-left: 5px solid #e69500;
+  transition: 0.1s ease;
+}
+
+.fixture_div_vs {
+  display: flex;
+  align-items: center;
+}
+
+.fixture_div_vs img {
+  padding: 0 1rem;
+  margin: auto;
+  height: 40px;
+}
+
+.fixture_div_btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fixture_div_btns button {
+  width: 100px;
+  margin: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .fixture_div {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    align-items: center;
+    width: 90%;
+  }
+}
+
+#next_info {
+  position: relative;
+  opacity: 0.8;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* fixed for parallax, scroll for normal*/
+  background-attachment: fixed;
+  padding-top: 65px;
+  background-image: url(/Assets/images/Carousel\ image.jpg);
+  min-height: 40vh;
+  background-position: top;
+  background-size: 200%;
+  filter: brightness(85%);
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.next_info_overlay {
+  z-index: 2;
+  margin: auto;
+  text-align: center;
+}
+.next_info_overlay button:hover {
+  cursor: pointer;
+}
+
+#fixture_sponsors {
+  margin: auto;
+  min-height: 20rem;
+  background: #e69500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#fixture_sponsors_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.sponsor_img {
+  width: 100px;
+  margin: auto;
+  margin-top: 2rem;
 }
