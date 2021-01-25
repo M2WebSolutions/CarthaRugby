@@ -84,16 +84,18 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.5rem;
   margin: 0.5rem;
   padding-left: 2rem;
+  display: flex;
+  align-items: center;
 }
 
 .title img {
-  display: inline-block;
   width: 5%;
 }
 
 .title a {
   text-decoration: none;
   color: white;
+  padding-right: 1rem;
 }
 
 .navbar-links {
