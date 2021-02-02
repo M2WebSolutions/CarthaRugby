@@ -382,11 +382,10 @@ body::-webkit-scrollbar-thumb {
 /* Upcoming Fixtures */
 .upcoming__fixtures {
   position: relative;
-  min-height: calc(25vh + 30vh);
+  padding-bottom: 2rem;
 }
 
-.bg__text,
-.overlay__text {
+.bg__text {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -397,7 +396,7 @@ body::-webkit-scrollbar-thumb {
 .overlay__text {
   z-index: 10;
   text-align: center;
-  padding-top: 7rem;
+  padding-top: 2rem;
 }
 
 .overlay__text p {
@@ -426,8 +425,6 @@ body::-webkit-scrollbar-thumb {
 .fixtures__grid {
   padding-left: 5rem;
   padding-right: 5rem;
-  margin-top: -15rem;
-  padding-bottom: 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 3rem 3rem;
@@ -468,11 +465,9 @@ body::-webkit-scrollbar-thumb {
   .fixtures__grid {
     grid-template-columns: 1fr;
     grid-template-areas: ".";
-    margin-top: -5rem;
   }
 
   .upcoming__fixtures {
-    position: relative;
     min-height: calc(25vh + 5vh);
   }
 
