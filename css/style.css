@@ -763,9 +763,6 @@ ul {
 }
 
 /* ************************************TEAM PAGE ***************************** */
-#team {
-  background: #f7f7f7;
-}
 #team_hero {
   background: red;
   height: 50vh;
@@ -800,6 +797,7 @@ ul {
   padding-left: 0.5rem;
   padding-bottom: 0.1rem;
   font-weight: 400;
+  color: #fff;
 }
 
 .player_card:hover img {
