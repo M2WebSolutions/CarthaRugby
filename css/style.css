@@ -231,11 +231,11 @@ body::-webkit-scrollbar-thumb {
 /* Hero */
 .hero {
   padding-top: 40px;
-  height: 75vh;
+  height: 70vh;
 }
 
 #my-keen-slider {
-  height: 75vh;
+  height: 70vh;
 }
 
 [class^="number-slide"],
@@ -344,7 +344,7 @@ body::-webkit-scrollbar-thumb {
   top: 50%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
-  fill: #333;
+  fill: rgb(85, 85, 85);
   cursor: pointer;
   z-index: 9999;
 }
@@ -390,7 +390,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about__us {
-  background-color: #1b1b1b;
+  background-color: #181818;
   color: #fff;
 }
 
@@ -400,6 +400,40 @@ body::-webkit-scrollbar-thumb {
 
 .about__us p {
   font-size: 1.1rem;
+}
+
+.parent__club {
+  background-color: #181818;
+  padding: 3rem 0;
+}
+
+.parent__btn { 
+  padding: .5rem 0em;
+  width: 15%;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+}
+
+.parent__btn a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all .5s ease-out;
+}
+
+/* BOTTOM TO TOP */
+.button__bottom-top {
+  background: linear-gradient(to top, rgb(15, 15, 15) 50%, rgb(24, 24, 24) 50%);
+  background-size: 100% 200%;
+  background-position: top left;
+  transition: all .5s ease-out;
+  color: #e69500;
+}
+
+.button__bottom-top:hover, .button__bottom-top:hover a {
+  background-position: bottom left;
+  color: #e69500;
 }
 
 /* Upcoming Fixtures */
