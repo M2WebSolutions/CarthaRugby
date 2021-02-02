@@ -9,6 +9,11 @@
       integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+    />
+    <link rel="stylesheet" href="/css/lightbox.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
 
     <title>Cartha Cobras | Gallery</title>
@@ -16,11 +21,15 @@
   <body>
     <header>
       <div class="above_header">
-        <p>SOCIAL LINKS CAN GO HERE</p>
+        <p>Follow us:</p>
+        <a href="#"><i class="fab fa-facebook-f upper_links"></i></a>
+        <a href="#"><i class="fab fa-twitter upper_links"></i></a>
+        <a href="#"><i class="fab fa-instagram upper_links"></i></a>
       </div>
-      <nav class="navbar">
+      <nav id="navbar" class="navbar">
         <div class="title">
-          <a href="/../index.html">CARTHA COBRAS</a>
+          <a href="/index.html">CARTHA COBRAS</a>
+          <img src="/Assets//images/Cobra Logo Colour Varient 1.png" alt="" />
         </div>
 
         <a href="#" class="toggle-button">
@@ -32,25 +41,165 @@
         <div class="navbar-links">
           <ul>
             <li class="nav__link">
-              <a href="/../index.html"><span class="hover">Home</span></a>
+              <a href="/index.html"><span class="hover">Home</span></a>
             </li>
             <li class="nav__link">
               <a href="/pages/team.html"><span class="hover">Team</span></a>
             </li>
             <li class="nav__link">
-              <a href="/pages/coaches.html"><span class="hover">Coaches</span></a>
+              <a href="/pages/coaches.html"
+                ><span class="hover">Coaches</span></a
+              >
             </li>
             <li class="nav__link">
-              <a href="/pages/fixtures.html"><span class="hover">Fixtures</span></a>
+              <a href="/pages/fixtures.html"
+                ><span class="hover">Fixtures</span></a
+              >
             </li>
             <li class="nav__link">
-              <a href="/pages/gallery.html"><span class="hover">Gallery</span></a>
+              <a href="/pages/gallery.html"
+                ><span class="active">Gallery</span></a
+              >
             </li>
           </ul>
         </div>
       </nav>
     </header>
 
+    <main>
+      <!-- Gallery -->
+        <div class="gallery-container">
+          <h1 class="heading">GALLERY</h1>
+          <div class="image-gallery">
+            <a
+              href="/Assets/images/gallery/Tall2.JPG"
+              data-lightbox="mygallery"
+              class="img-1"
+            >
+              <i class="icon ion-md-expand"></i>
+            </a>
+            <a
+              href="/Assets/images/gallery/Tall1.JPG"
+              data-lightbox="mygallery"
+              class="img-2"
+            >
+              <i class="icon ion-md-expand"></i>
+            </a>
+            <a
+              href="/Assets/images/gallery/Middle3.JPG"
+              data-lightbox="mygallery"
+              class="img-3"
+            >
+              <i class="icon ion-md-expand"></i>
+            </a>
+            <a
+              href="/Assets/images/gallery/Middle2.JPG"
+              data-lightbox="mygallery"
+              class="img-4"
+            >
+              <i class="icon ion-md-expand"></i>
+            </a>
+            <a
+              href="/Assets/images/gallery/Wide1.JPG"
+              data-lightbox="mygallery"
+              class="img-5"
+            >
+              <i class="icon ion-md-expand"></i>
+            </a>
+            <a
+              href="/Assets/images/gallery/Middle1.JPG"
+              data-lightbox="mygallery"
+              class="img-6"
+            >
+              <i class="icon ion-md-expand"></i>
+            </a>
+            <a
+              href="/Assets/images/gallery/Middle4.JPG"
+              data-lightbox="mygallery"
+              class="img-7"
+            >
+              <i class="icon ion-md-expand"></i>
+            </a>
+            <a
+              href="/Assets/images/gallery/Wide2.JPG"
+              data-lightbox="mygallery"
+              class="img-8"
+            >
+              <i class="icon ion-md-expand"></i>
+            </a>
+          </div>
+        </div>
+    </main>
+
+    <!-- Site footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>About Club</h4>
+            <p>Not as good as Hamilton</p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Site Map</h4>
+            <ul>
+              <li>
+                <a href="index.html"><span class="hover">Home</span></a>
+              </li>
+              <li>
+                <a href="/pages/team.html"><span class="hover">Team</span></a>
+              </li>
+              <li>
+                <a href="/pages/coaches.html"
+                  ><span class="hover">Coaches</span></a
+                >
+              </li>
+              <li>
+                <a href="/pages/fixtures.html"
+                  ><span class="hover">Fixtures</span></a
+                >
+              </li>
+              <li>
+                <a href="/pages/gallery.html"
+                  ><span class="hover">Gallery</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Other stuff</h4>
+            <p>Column for other stuff</p>
+          </div>
+
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="notice">
+              <p>
+                Copyright &copy; 2021 All Rights Reserved by
+                <a href="#">Cartha Cobras</a>.
+              </p>
+              <p>
+                Developed by
+                <a target="_blank" href="https://www.cairnmacgregor.com/"
+                  >Cairn MacGregor</a
+                >
+                &
+                <a target="_blank" href="https://www.morganmcdonald.co.uk/"
+                  >Morgan McDonald</a
+                >.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/lightbox-plus.jquery.min.js"></script>
     <script src="/js/app.js"></script>
   </body>
 </html>
