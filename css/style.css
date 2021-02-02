@@ -240,12 +240,12 @@ body::-webkit-scrollbar-thumb {
 
 [class^="number-slide"],
 [class*=" number-slide"] {
-  background: white;
+  background: rgb(48, 48, 48);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 50px;
-  color: #333;
+  color: rgb(255, 255, 255);
   font-weight: 500;
   height: 100%;
 }
@@ -322,8 +322,7 @@ body::-webkit-scrollbar-thumb {
 .dot {
   border: none;
   width: 25px;
-  height: 4px;
-  border: 1px solid black;
+  height: 2px;
   background: #fff;
   margin: 0 5px;
   cursor: pointer;
@@ -334,7 +333,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .dot--active {
-  background: #000;
+  background: #e69500;
   border: none;
 }
 
