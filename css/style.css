@@ -53,13 +53,13 @@ body::-webkit-scrollbar-thumb {
   width: 40px;
   text-align: center;
   line-height: 40px;
-  color: white;
+  color: #e69500;
   transition: all 0.5s ease;
   margin: 0 0.5rem;
 }
 
 .upper_links:hover {
-  color: #e69500;
+  color: #fff;
   transition: all 0.5s ease;
 }
 
