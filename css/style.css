@@ -16,6 +16,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  background-color: #1b1b1b;
+}
+
+h2 {
+  color: #e69500;
 }
 
 /* Custom Scrollbar */
@@ -42,7 +47,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: black;
+  background-color: #111111;
   color: #fff;
   z-index: 99999999;
 }
@@ -73,7 +78,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
+  background-color: #111111;
   color: white;
   z-index: 99999;
   height: 70px;
@@ -365,6 +370,7 @@ body::-webkit-scrollbar-thumb {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-template-areas: ". . .";
+  background-color: #1b1b1b;
 }
 
 .picture__links img {
@@ -382,6 +388,19 @@ body::-webkit-scrollbar-thumb {
 .content {
   text-align: center;
   padding: 0 5rem;
+}
+
+.about__us {
+  background-color: #1b1b1b;
+  color: #fff;
+}
+
+.about__us h2 {
+  color: #e69500;
+}
+
+.about__us p {
+  font-size: 1.1rem;
 }
 
 /* Upcoming Fixtures */
@@ -439,9 +458,10 @@ body::-webkit-scrollbar-thumb {
 .fixtures__grid .fixture {
   max-width: 100%;
   max-height: 100%;
-  background-color: #fff;
+  background-color: rgb(15, 15, 15);
   z-index: 16;
-  border: 1px solid rgb(206, 206, 206);
+  border: 1px solid rgb(15, 15, 15);
+  color: #fff;
 }
 
 .fixture .fixture__details {
@@ -519,7 +539,7 @@ ul {
   list-style: none;
 }
 .footer {
-  background-color: #24262b;
+  background-color: #111111;
   padding: 70px 0;
 }
 .footer-col {
