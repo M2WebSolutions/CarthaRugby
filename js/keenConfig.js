@@ -5,6 +5,11 @@ var slider = new KeenSlider(sliderElement, {
     slidesPerView: 1,
     centered: true,
     vertical: true,
+    breakpoints: {
+      '(max-width: 720px)': {
+        controls: false
+      }},
+        loop: false,
     // AUTO PLAY
     loop: true, 
       dragStart: () => {
